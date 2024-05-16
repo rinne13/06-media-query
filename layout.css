@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    background: lightpink;
+    color: darkmagenta;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.mobile {
+   display: none;
+}
+
+.tablet {
+    background: rgb(125, 73, 125);
+    color: lightpink;
+    display: none;
+}
+
+.desktop {
+    background: rgb(124, 117, 218);
+    color: lightpink;
+    display: none;
+}
+
+/*tablet-näkymän säännöt*/
+@media only screen and (min-width: 426px)
+{
+    body {
+        background: rgb(81, 183, 155);
+        color: rgb(242, 236, 56);
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    body {
+        background: lemonchiffon;
+        color: darkgoldenrod;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+}
